@@ -1451,8 +1451,4 @@ Encontrou um bug? Tem uma sugestão? Abra uma [issue](https://github.com/seu-usu
 
 <div align="center">
 
-**⭐ Se este projeto foi útil, considere dar uma estrela!**
-
-**🕵️ Made with ❤️ for fighting financial crime**
-
 </div>
