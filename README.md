@@ -61,10 +61,10 @@ graph LR
     B -->|Ocultação| C[Múltiplas Transações]
     C -->|Integração| D[Fundos Limpos]
     
-    style A fill:#ff6b6b
-    style B fill:#ffd93d
-    style C fill:#6bcf7f
-    style D fill:#4ecdc4
+    style A fill:#FF1744,stroke:#C51162,stroke-width:3px,color:#fff
+    style B fill:#FFD600,stroke:#FF6F00,stroke-width:3px,color:#000
+    style C fill:#00E676,stroke:#00C853,stroke-width:3px,color:#000
+    style D fill:#00B0FF,stroke:#0091EA,stroke-width:3px,color:#fff
 ```
 
 ### Nossa Solução
@@ -108,12 +108,14 @@ graph TB
     E -->|Queries| F
     E -->|Persiste| G
     
-    style A fill:#e3f2fd
-    style B fill:#e3f2fd
-    style C fill:#fff3e0
-    style F fill:#f3e5f5
-    style G fill:#f3e5f5
-    style H fill:#e8f5e9
+    style A fill:#2196F3,stroke:#1565C0,stroke-width:2px,color:#fff
+    style B fill:#00BCD4,stroke:#00838F,stroke-width:2px,color:#fff
+    style C fill:#FF9800,stroke:#E65100,stroke-width:2px,color:#fff
+    style D fill:#FFB74D,stroke:#F57C00,stroke-width:2px,color:#000
+    style E fill:#FFA726,stroke:#F57C00,stroke-width:2px,color:#000
+    style F fill:#9C27B0,stroke:#6A1B9A,stroke-width:2px,color:#fff
+    style G fill:#7B1FA2,stroke:#4A148C,stroke-width:2px,color:#fff
+    style H fill:#4CAF50,stroke:#2E7D32,stroke-width:2px,color:#fff
 ```
 
 ### Fluxo de Dados
@@ -167,13 +169,13 @@ graph LR
     A -->|$5K| F[Conta 5]
     A -->|$4K| G[...]
     
-    style A fill:#ff6b6b,color:#fff
-    style B fill:#ffd93d
-    style C fill:#ffd93d
-    style D fill:#ffd93d
-    style E fill:#ffd93d
-    style F fill:#ffd93d
-    style G fill:#ffd93d
+    style A fill:#FF1744,stroke:#C51162,stroke-width:3px,color:#fff
+    style B fill:#FFD600,stroke:#FF6F00,stroke-width:2px,color:#000
+    style C fill:#FFD600,stroke:#FF6F00,stroke-width:2px,color:#000
+    style D fill:#FFD600,stroke:#FF6F00,stroke-width:2px,color:#000
+    style E fill:#FFD600,stroke:#FF6F00,stroke-width:2px,color:#000
+    style F fill:#FFD600,stroke:#FF6F00,stroke-width:2px,color:#000
+    style G fill:#FFD600,stroke:#FF6F00,stroke-width:2px,color:#000
 ```
 
 **Características:**
@@ -194,13 +196,13 @@ graph LR
     E[Conta 5] -->|$4K| G
     F[...] -->|$5K| G
     
-    style G fill:#ff6b6b,color:#fff
-    style A fill:#6bcf7f
-    style B fill:#6bcf7f
-    style C fill:#6bcf7f
-    style D fill:#6bcf7f
-    style E fill:#6bcf7f
-    style F fill:#6bcf7f
+    style G fill:#FF1744,stroke:#C51162,stroke-width:3px,color:#fff
+    style A fill:#00E676,stroke:#00C853,stroke-width:2px,color:#000
+    style B fill:#00E676,stroke:#00C853,stroke-width:2px,color:#000
+    style C fill:#00E676,stroke:#00C853,stroke-width:2px,color:#000
+    style D fill:#00E676,stroke:#00C853,stroke-width:2px,color:#000
+    style E fill:#00E676,stroke:#00C853,stroke-width:2px,color:#000
+    style F fill:#00E676,stroke:#00C853,stroke-width:2px,color:#000
 ```
 
 **Características:**
@@ -219,10 +221,10 @@ graph LR
     C -->|$44K| D[Conta D]
     D -->|$42K| A
     
-    style A fill:#ff6b6b,color:#fff
-    style B fill:#ffd93d
-    style C fill:#4ecdc4
-    style D fill:#a8e6cf
+    style A fill:#FF1744,stroke:#C51162,stroke-width:3px,color:#fff
+    style B fill:#FFD600,stroke:#FF6F00,stroke-width:2px,color:#000
+    style C fill:#00B0FF,stroke:#0091EA,stroke-width:2px,color:#fff
+    style D fill:#00E676,stroke:#00C853,stroke-width:2px,color:#000
 ```
 
 **Características:**
@@ -249,7 +251,10 @@ graph LR
     B --> A
     C --> A
     
-    style A fill:#ff6b6b,color:#fff
+    style A fill:#FF1744,stroke:#C51162,stroke-width:4px,color:#fff
+    style B fill:#FFD600,stroke:#FF6F00,stroke-width:2px,color:#000
+    style C fill:#00B0FF,stroke:#0091EA,stroke-width:2px,color:#fff
+    style D fill:#00E676,stroke:#00C853,stroke-width:2px,color:#000
 ```
 
 **O que faz:** Identifica contas mais "influentes" baseado em quem as conecta
@@ -320,12 +325,12 @@ graph TB
     
     A1 -.->|poucas conexões| B1
     
-    style A1 fill:#ff6b6b,color:#fff
-    style A2 fill:#ff6b6b,color:#fff
-    style A3 fill:#ff6b6b,color:#fff
-    style B1 fill:#4ecdc4,color:#fff
-    style B2 fill:#4ecdc4,color:#fff
-    style B3 fill:#4ecdc4,color:#fff
+    style A1 fill:#FF1744,stroke:#C51162,stroke-width:3px,color:#fff
+    style A2 fill:#F50057,stroke:#C51162,stroke-width:3px,color:#fff
+    style A3 fill:#D50000,stroke:#C51162,stroke-width:3px,color:#fff
+    style B1 fill:#00B0FF,stroke:#0091EA,stroke-width:3px,color:#fff
+    style B2 fill:#0091EA,stroke:#01579B,stroke-width:3px,color:#fff
+    style B3 fill:#0277BD,stroke:#01579B,stroke-width:3px,color:#fff
 ```
 
 **O que faz:** Detecta grupos de contas que transacionam principalmente entre si
@@ -427,8 +432,11 @@ graph LR
     
     E[Velocidade:<br/>$85K em 10 min<br/>= $510K/hora] 
     
-    style A fill:#ff6b6b,color:#fff
-    style E fill:#ff6b6b,color:#fff
+    style A fill:#FF1744,stroke:#C51162,stroke-width:3px,color:#fff
+    style B fill:#FFD600,stroke:#FF6F00,stroke-width:2px,color:#000
+    style C fill:#FFD600,stroke:#FF6F00,stroke-width:2px,color:#000
+    style D fill:#FFD600,stroke:#FF6F00,stroke-width:2px,color:#000
+    style E fill:#FF1744,stroke:#C51162,stroke-width:4px,color:#fff
 ```
 
 **O que faz:** Mede velocidade de movimentação de fundos através de múltiplas contas
@@ -467,10 +475,10 @@ graph LR
     B --> C[Pydantic]
     C --> D[Uvicorn]
     
-    style A fill:#3776ab,color:#fff
-    style B fill:#009688,color:#fff
-    style C fill:#e92063,color:#fff
-    style D fill:#2094f3,color:#fff
+    style A fill:#3776AB,stroke:#FFD43B,stroke-width:3px,color:#fff
+    style B fill:#009688,stroke:#00695C,stroke-width:3px,color:#fff
+    style C fill:#E92063,stroke:#AD1457,stroke-width:3px,color:#fff
+    style D fill:#2196F3,stroke:#1565C0,stroke-width:3px,color:#fff
 ```
 
 ### Databases
@@ -554,9 +562,17 @@ graph TD
     C --> C4[GET /analysis/patterns/cycles]
     C --> C5[GET /analysis/statistics]
     
-    style A fill:#e3f2fd
-    style B fill:#fff3e0
-    style C fill:#f3e5f5
+    style A fill:#2196F3,stroke:#1565C0,stroke-width:3px,color:#fff
+    style B fill:#FF9800,stroke:#E65100,stroke-width:2px,color:#fff
+    style C fill:#9C27B0,stroke:#6A1B9A,stroke-width:2px,color:#fff
+    style B1 fill:#FFB74D,stroke:#F57C00,stroke-width:1px,color:#000
+    style B2 fill:#FFB74D,stroke:#F57C00,stroke-width:1px,color:#000
+    style B3 fill:#FFB74D,stroke:#F57C00,stroke-width:1px,color:#000
+    style C1 fill:#CE93D8,stroke:#8E24AA,stroke-width:1px,color:#000
+    style C2 fill:#CE93D8,stroke:#8E24AA,stroke-width:1px,color:#000
+    style C3 fill:#CE93D8,stroke:#8E24AA,stroke-width:1px,color:#000
+    style C4 fill:#CE93D8,stroke:#8E24AA,stroke-width:1px,color:#000
+    style C5 fill:#CE93D8,stroke:#8E24AA,stroke-width:1px,color:#000
 ```
 
 ### 2. Exemplos de Uso
@@ -830,11 +846,13 @@ graph TB
         G[Vercel] -->|API Calls| D
     end
     
-    style A fill:#e8f5e9
-    style D fill:#fff3e0
-    style E fill:#f3e5f5
-    style F fill:#f3e5f5
-    style G fill:#e3f2fd
+    style A fill:#4CAF50,stroke:#2E7D32,stroke-width:3px,color:#fff
+    style B fill:#FF9800,stroke:#E65100,stroke-width:2px,color:#fff
+    style C fill:#2196F3,stroke:#1565C0,stroke-width:2px,color:#fff
+    style D fill:#FF9800,stroke:#E65100,stroke-width:3px,color:#fff
+    style E fill:#9C27B0,stroke:#6A1B9A,stroke-width:2px,color:#fff
+    style F fill:#7B1FA2,stroke:#4A148C,stroke-width:2px,color:#fff
+    style G fill:#00BCD4,stroke:#00838F,stroke-width:2px,color:#fff
 ```
 
 #### Neo4j AuraDB (Graph DB)
@@ -912,6 +930,7 @@ RISK_THRESHOLD=0.7
 ### Tipologias Detectadas
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': { 'pie1':'#00E676', 'pie2':'#FFD600', 'pie3':'#00B0FF', 'pie4':'#FF1744'}}}%%
 pie title Distribuição de Tipologias
     "Normal" : 8500
     "Fan-Out" : 4740
