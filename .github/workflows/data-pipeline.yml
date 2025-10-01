@@ -1,0 +1,45 @@
+name: Data Pipeline
+
+on:
+  schedule:
+    # Executa todo domingo às 2am UTC
+    - cron: '0 2 * * 0'
+  workflow_dispatch:  # Permite execução manual
+
+jobs:
+  generate-data:
+    name: Generate AML Data
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pandas numpy
+    
+    - name: Generate synthetic data
+      run: |
+        python scripts/generate_aml_data.py
+    
+    - name: Upload generated data
+      uses: actions/upload-artifact@v3
+      with:
+        name: aml-data
+        path: data/raw/
+        retention-days: 30
+    
+    - name: Generate data report
+      run: |
+        echo "📊 Data Generation Report" >> $GITHUB_STEP_SUMMARY
+        echo "Generated at: $(date)" >> $GITHUB_STEP_SUMMARY
+        echo "Files:" >> $GITHUB_STEP_SUMMARY
+        ls -lh data/raw/ >> $GITHUB_STEP_SUMMARY
+
